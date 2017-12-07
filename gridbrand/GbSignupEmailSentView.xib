@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GbSignupEmailSentView" customModule="postcraft" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmBtn" destination="XMi-iz-cCe" id="VGa-Jk-RRy"/>
+                <outlet property="emailLabel" destination="1TG-eA-PQe" id="TRl-W6-xdw"/>
+                <outlet property="sendAgainBtn" destination="VJ5-Er-Cz7" id="C3u-m0-TKN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDv-hZ-Prd">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpv-iH-vf2">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="2ne-sh-aW2"/>
+                                <constraint firstAttribute="width" constant="15" id="ZD8-66-Zlr"/>
+                            </constraints>
+                            <state key="normal" image="close"/>
+                            <connections>
+                                <action selector="closeBtnTapped:" destination="-1" eventType="touchUpInside" id="IgD-kR-CbF"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="send_large" translatesAutoresizingMaskIntoConstraints="NO" id="ROp-hY-A0q">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="Nwf-ga-0eM"/>
+                                <constraint firstAttribute="width" constant="41" id="ahl-dt-PAy"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Sent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIL-pz-ZL1">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We sent a confirm link to " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AH6-WM-lsg">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                            <color key="textColor" red="0.1215686275" green="0.51764705879999995" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="useruser@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1TG-eA-PQe">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                            <color key="textColor" red="0.1215686275" green="0.51764705879999995" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="so you can start to explore and design your brand." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OU8-EW-QXd">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                            <color key="textColor" red="0.1215686275" green="0.51764705879999995" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Didn’t get the email? try these" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSg-Vh-ujj">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                            <color key="textColor" red="0.1215686275" green="0.51764705879999995" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not your email address?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5p-cR-fEK">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                            <color key="textColor" red="0.1215686275" green="0.51764705879999995" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUu-pN-RdA">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                            <state key="normal" title="Help Center">
+                                <color key="titleColor" red="0.56470588239999997" green="0.070588235289999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfW-hm-SF1">
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                            <state key="normal" title="Try again">
+                                <color key="titleColor" red="0.56470588239999997" green="0.070588235289999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMi-iz-cCe" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <color key="backgroundColor" red="0.56470588239999997" green="0.070588235289999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="cWP-vG-nNg"/>
+                                <constraint firstAttribute="width" constant="101" id="sG7-x2-u9R"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Ok, I check">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="confirmBtnTapped:" destination="-1" eventType="touchUpInside" id="3YL-db-BWm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ5-Er-Cz7" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="101" id="BDI-Q4-BZI"/>
+                                <constraint firstAttribute="height" constant="35" id="tZs-nF-nRk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="tintColor" red="0.23137254900000001" green="0.74117647060000003" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Send again">
+                                <color key="titleColor" red="0.12941176469999999" green="0.52941176469999995" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sendAgainBtnTapped:" destination="-1" eventType="touchUpInside" id="beK-gt-AgR"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="1TG-eA-PQe" firstAttribute="top" secondItem="AH6-WM-lsg" secondAttribute="top" id="6RJ-Ru-OlU"/>
+                        <constraint firstItem="ROp-hY-A0q" firstAttribute="leading" secondItem="HDv-hZ-Prd" secondAttribute="leading" constant="24" id="6eY-Qr-iTs"/>
+                        <constraint firstAttribute="bottom" secondItem="XMi-iz-cCe" secondAttribute="bottom" constant="24" id="Cn4-GH-7TI"/>
+                        <constraint firstItem="ROp-hY-A0q" firstAttribute="top" secondItem="HDv-hZ-Prd" secondAttribute="top" constant="80" id="EN9-K2-cBd"/>
+                        <constraint firstItem="vUu-pN-RdA" firstAttribute="centerY" secondItem="qSg-Vh-ujj" secondAttribute="centerY" id="HVW-4C-TD9"/>
+                        <constraint firstItem="qSg-Vh-ujj" firstAttribute="top" secondItem="OU8-EW-QXd" secondAttribute="bottom" constant="13" id="IIb-fM-q9N"/>
+                        <constraint firstItem="AH6-WM-lsg" firstAttribute="top" secondItem="NIL-pz-ZL1" secondAttribute="bottom" constant="10" id="InQ-iM-TC5"/>
+                        <constraint firstItem="1TG-eA-PQe" firstAttribute="leading" secondItem="AH6-WM-lsg" secondAttribute="trailing" constant="5" id="JqO-lY-ejN"/>
+                        <constraint firstItem="M5p-cR-fEK" firstAttribute="top" secondItem="qSg-Vh-ujj" secondAttribute="bottom" constant="10" id="PLm-iW-Kx4"/>
+                        <constraint firstItem="NIL-pz-ZL1" firstAttribute="leading" secondItem="HDv-hZ-Prd" secondAttribute="leading" constant="24" id="PVX-9b-nUO"/>
+                        <constraint firstAttribute="bottom" secondItem="VJ5-Er-Cz7" secondAttribute="bottom" constant="24" id="R1M-XB-1cL"/>
+                        <constraint firstItem="mfW-hm-SF1" firstAttribute="leading" secondItem="M5p-cR-fEK" secondAttribute="trailing" constant="15" id="Rpb-Ov-3q5"/>
+                        <constraint firstItem="VJ5-Er-Cz7" firstAttribute="leading" secondItem="HDv-hZ-Prd" secondAttribute="leading" constant="26" id="Wck-QO-78A"/>
+                        <constraint firstItem="OU8-EW-QXd" firstAttribute="leading" secondItem="HDv-hZ-Prd" secondAttribute="leading" constant="24" id="YDb-Bh-ocl"/>
+                        <constraint firstAttribute="trailing" secondItem="XMi-iz-cCe" secondAttribute="trailing" constant="26" id="YUg-Md-LUp"/>
+                        <constraint firstAttribute="trailing" secondItem="OU8-EW-QXd" secondAttribute="trailing" constant="24" id="ckH-IV-bqM"/>
+                        <constraint firstItem="NIL-pz-ZL1" firstAttribute="top" secondItem="ROp-hY-A0q" secondAttribute="bottom" constant="16" id="eaQ-lq-fGu"/>
+                        <constraint firstAttribute="height" constant="400" id="gVu-tm-ieD"/>
+                        <constraint firstItem="AH6-WM-lsg" firstAttribute="leading" secondItem="HDv-hZ-Prd" secondAttribute="leading" constant="24" id="hc8-N1-zB9"/>
+                        <constraint firstItem="OU8-EW-QXd" firstAttribute="top" secondItem="AH6-WM-lsg" secondAttribute="bottom" constant="1" id="kUu-et-zRW"/>
+                        <constraint firstItem="vUu-pN-RdA" firstAttribute="leading" secondItem="qSg-Vh-ujj" secondAttribute="trailing" constant="15" id="owJ-Ij-yOo"/>
+                        <constraint firstItem="qSg-Vh-ujj" firstAttribute="leading" secondItem="HDv-hZ-Prd" secondAttribute="leading" constant="24" id="s38-Pb-Fu4"/>
+                        <constraint firstItem="mfW-hm-SF1" firstAttribute="centerY" secondItem="M5p-cR-fEK" secondAttribute="centerY" id="t63-cA-KAS"/>
+                        <constraint firstItem="kpv-iH-vf2" firstAttribute="top" secondItem="HDv-hZ-Prd" secondAttribute="top" constant="22" id="udN-as-Xpf"/>
+                        <constraint firstAttribute="trailing" secondItem="1TG-eA-PQe" secondAttribute="trailing" constant="24" id="w3m-ht-7B0"/>
+                        <constraint firstItem="M5p-cR-fEK" firstAttribute="leading" secondItem="HDv-hZ-Prd" secondAttribute="leading" constant="24" id="wL8-Cm-a0U"/>
+                        <constraint firstAttribute="trailing" secondItem="kpv-iH-vf2" secondAttribute="trailing" constant="22" id="xOm-oI-bGI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HDv-hZ-Prd" secondAttribute="trailing" id="4fe-ID-qUh"/>
+                <constraint firstItem="HDv-hZ-Prd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Kb2-Ae-89s"/>
+                <constraint firstItem="HDv-hZ-Prd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nBx-wu-foK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="51"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="15" height="15"/>
+        <image name="send_large" width="42" height="42"/>
+    </resources>
+</document>

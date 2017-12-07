@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationTVCell" id="KGk-i7-Jjw" customClass="GbNotificationTVCell" customModule="postcraft">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCr-v4-Bjo" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="618-Xp-iuE"/>
+                            <constraint firstAttribute="height" constant="35" id="lxX-3j-FQg"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal" image="sample_avatar4"/>
+                        <connections>
+                            <action selector="avatarBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ORG-rX-q2z"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="237" verticalHuggingPriority="251" text="Michael Jackson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMG-6f-m2J">
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="236" verticalHuggingPriority="251" text="buy your post" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsN-47-NIH">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="11"/>
+                        <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ak-z2-YXf">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="9ZZ-LT-dx2"/>
+                            <constraint firstAttribute="width" constant="26" id="eCk-Te-DW0"/>
+                        </constraints>
+                        <state key="normal" image="thumbnail"/>
+                        <connections>
+                            <action selector="thumbnailBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="x11-Tg-Vx1"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:30pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doc-cp-nsO">
+                        <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="11"/>
+                        <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFa-up-Sh1">
+                        <color key="backgroundColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mFq-i1-KRi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="pFa-up-Sh1" secondAttribute="bottom" constant="-8" id="0Nn-Ax-PfE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="doc-cp-nsO" secondAttribute="trailing" constant="8" id="1z3-3D-hYW"/>
+                    <constraint firstItem="doc-cp-nsO" firstAttribute="leading" secondItem="7ak-z2-YXf" secondAttribute="trailing" constant="8" id="7Xb-0N-hSn"/>
+                    <constraint firstItem="fCr-v4-Bjo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="COq-JF-TbN"/>
+                    <constraint firstItem="qMG-6f-m2J" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NZa-hA-q3P"/>
+                    <constraint firstItem="7ak-z2-YXf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Qub-HR-cnF"/>
+                    <constraint firstItem="qMG-6f-m2J" firstAttribute="leading" secondItem="fCr-v4-Bjo" secondAttribute="trailing" constant="8" id="UBQ-zv-AZf"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="pFa-up-Sh1" secondAttribute="leading" id="VGw-qs-R7b"/>
+                    <constraint firstItem="7ak-z2-YXf" firstAttribute="leading" secondItem="SsN-47-NIH" secondAttribute="trailing" constant="8" id="XXG-Kc-wPW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pFa-up-Sh1" secondAttribute="trailing" id="evW-5X-NOQ"/>
+                    <constraint firstItem="fCr-v4-Bjo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="h3J-nW-rJh"/>
+                    <constraint firstItem="SsN-47-NIH" firstAttribute="leading" secondItem="qMG-6f-m2J" secondAttribute="trailing" constant="4" id="nZ8-GO-gcM"/>
+                    <constraint firstItem="doc-cp-nsO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="vzC-Dx-xLX"/>
+                    <constraint firstItem="SsN-47-NIH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yAm-gP-cxx"/>
+                </constraints>
+                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarBtn" destination="fCr-v4-Bjo" id="qPz-Ug-EbR"/>
+                <outlet property="messageLabel" destination="SsN-47-NIH" id="8Qq-0f-XZc"/>
+                <outlet property="nameLabel" destination="qMG-6f-m2J" id="O3e-Jc-vd0"/>
+                <outlet property="thumbnailBtn" destination="7ak-z2-YXf" id="uJB-LU-yGf"/>
+                <outlet property="thumbnailWidth" destination="eCk-Te-DW0" id="Tor-BQ-f16"/>
+                <outlet property="timeLabel" destination="doc-cp-nsO" id="9ff-7D-rva"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sample_avatar4" width="44" height="44"/>
+        <image name="thumbnail" width="26" height="26"/>
+    </resources>
+</document>

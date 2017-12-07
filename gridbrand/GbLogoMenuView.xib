@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GbLogoMenuView" customModule="postcraft" customModuleProvider="target">
+            <connections>
+                <outlet property="hueBtn" destination="p5g-Uo-hO7" id="SeE-CX-YwB"/>
+                <outlet property="logoImageView" destination="tLL-GK-oFG" id="gIB-ZF-qqp"/>
+                <outlet property="multiplyBtn" destination="OHP-31-UIF" id="YXg-Rn-dbF"/>
+                <outlet property="overlayBtn" destination="QAv-lU-fvD" id="zgw-xO-N83"/>
+                <outlet property="softLightBtn" destination="J5Q-AF-Tgx" id="o3e-dV-WXb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="97W-rz-UVY">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload_large_black" translatesAutoresizingMaskIntoConstraints="NO" id="tLL-GK-oFG" customClass="GbRoundedImageView" customModule="postcraft" customModuleProvider="target">
+                    <rect key="frame" x="13" y="13" width="72" height="72"/>
+                    <color key="tintColor" red="0.56470588239999997" green="0.074509803920000006" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="ovR-85-Roh"/>
+                        <constraint firstAttribute="height" constant="72" id="p2E-2z-o9N"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAB-6e-rZO">
+                    <rect key="frame" x="13" y="13" width="72" height="72"/>
+                    <connections>
+                        <action selector="logoUploadBtnTapped:" destination="-1" eventType="touchUpInside" id="dw8-iO-peD"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezt-kY-ewh">
+                    <rect key="frame" x="98" y="0.0" width="277" height="98"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHP-31-UIF" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <rect key="frame" x="13" y="13" width="107" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="ieQ-r3-dWW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="11"/>
+                            <color key="tintColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Multiply">
+                                <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="multiplyBtnTapped:" destination="-1" eventType="touchUpInside" id="aAo-iT-KXA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAv-lU-fvD" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <rect key="frame" x="157" y="13" width="107" height="25"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="11"/>
+                            <color key="tintColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Overlay">
+                                <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="overlayBtnTapped:" destination="-1" eventType="touchUpInside" id="182-ID-A7V"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5g-Uo-hO7" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <rect key="frame" x="13" y="60" width="107" height="25"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="11"/>
+                            <color key="tintColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Hue">
+                                <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="hueBtnTapped:" destination="-1" eventType="touchUpInside" id="Fnd-np-wfk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5Q-AF-Tgx" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <rect key="frame" x="157" y="60" width="107" height="25"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="11"/>
+                            <color key="tintColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Soft Light">
+                                <color key="titleColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="softLightBtnTapped:" destination="-1" eventType="touchUpInside" id="DzE-Ny-zBK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="J5Q-AF-Tgx" firstAttribute="trailing" secondItem="QAv-lU-fvD" secondAttribute="trailing" id="1LT-87-RYo"/>
+                        <constraint firstItem="QAv-lU-fvD" firstAttribute="height" secondItem="OHP-31-UIF" secondAttribute="height" id="4of-0l-v3Y"/>
+                        <constraint firstItem="QAv-lU-fvD" firstAttribute="top" secondItem="OHP-31-UIF" secondAttribute="top" id="E1Z-yb-Une"/>
+                        <constraint firstItem="OHP-31-UIF" firstAttribute="width" secondItem="ezt-kY-ewh" secondAttribute="width" multiplier="0.5" constant="-32" id="GgY-v8-k1p"/>
+                        <constraint firstAttribute="bottom" secondItem="p5g-Uo-hO7" secondAttribute="bottom" constant="13" id="Mml-I2-pXi"/>
+                        <constraint firstItem="QAv-lU-fvD" firstAttribute="width" secondItem="OHP-31-UIF" secondAttribute="width" id="OBy-um-CFg"/>
+                        <constraint firstItem="OHP-31-UIF" firstAttribute="leading" secondItem="ezt-kY-ewh" secondAttribute="leading" constant="13" id="Sq3-t5-uuO"/>
+                        <constraint firstItem="J5Q-AF-Tgx" firstAttribute="height" secondItem="OHP-31-UIF" secondAttribute="height" id="WKh-zM-UCj"/>
+                        <constraint firstItem="p5g-Uo-hO7" firstAttribute="height" secondItem="OHP-31-UIF" secondAttribute="height" id="WYa-Ao-3On"/>
+                        <constraint firstItem="OHP-31-UIF" firstAttribute="top" secondItem="ezt-kY-ewh" secondAttribute="top" constant="13" id="XAC-pj-hBD"/>
+                        <constraint firstItem="J5Q-AF-Tgx" firstAttribute="width" secondItem="OHP-31-UIF" secondAttribute="width" id="bu6-5D-QdF"/>
+                        <constraint firstItem="p5g-Uo-hO7" firstAttribute="width" secondItem="OHP-31-UIF" secondAttribute="width" id="m5P-fR-5kk"/>
+                        <constraint firstAttribute="trailing" secondItem="QAv-lU-fvD" secondAttribute="trailing" constant="13" id="nkR-Fs-JQF"/>
+                        <constraint firstItem="p5g-Uo-hO7" firstAttribute="leading" secondItem="OHP-31-UIF" secondAttribute="leading" id="qIb-2y-js2"/>
+                        <constraint firstAttribute="height" constant="98" id="sN3-lC-OC3"/>
+                        <constraint firstItem="J5Q-AF-Tgx" firstAttribute="top" secondItem="p5g-Uo-hO7" secondAttribute="top" id="sUb-fp-3GI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBj-gW-FP6">
+                    <rect key="frame" x="0.0" y="95" width="375" height="72"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwb-jl-Hve">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.72941176470000002" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="titleEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="180" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Buy Logo" image="magic">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buyLogoBtnTapped:" destination="-1" eventType="touchUpInside" id="pKL-f5-BLC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fwb-jl-Hve" firstAttribute="top" secondItem="dBj-gW-FP6" secondAttribute="top" id="137-TX-M9w"/>
+                        <constraint firstAttribute="trailing" secondItem="fwb-jl-Hve" secondAttribute="trailing" id="QGv-Ox-Go5"/>
+                        <constraint firstAttribute="height" constant="72" id="nMd-Ve-rKE"/>
+                        <constraint firstItem="fwb-jl-Hve" firstAttribute="leading" secondItem="dBj-gW-FP6" secondAttribute="leading" id="oXE-1O-W8y"/>
+                        <constraint firstAttribute="bottom" secondItem="fwb-jl-Hve" secondAttribute="bottom" id="p28-JE-OXo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dBj-gW-FP6" secondAttribute="bottom" id="26k-LN-ldt"/>
+                <constraint firstItem="dBj-gW-FP6" firstAttribute="width" secondItem="97W-rz-UVY" secondAttribute="width" id="37C-7Q-a5n"/>
+                <constraint firstItem="tLL-GK-oFG" firstAttribute="leading" secondItem="97W-rz-UVY" secondAttribute="leading" constant="13" id="4fg-fA-wxH"/>
+                <constraint firstItem="KAB-6e-rZO" firstAttribute="leading" secondItem="tLL-GK-oFG" secondAttribute="leading" id="C6B-nQ-RB5"/>
+                <constraint firstItem="ezt-kY-ewh" firstAttribute="top" secondItem="97W-rz-UVY" secondAttribute="top" id="KFL-7r-Qsk"/>
+                <constraint firstItem="tLL-GK-oFG" firstAttribute="top" secondItem="97W-rz-UVY" secondAttribute="top" constant="13" id="KOw-vI-sgK"/>
+                <constraint firstItem="dBj-gW-FP6" firstAttribute="centerX" secondItem="97W-rz-UVY" secondAttribute="centerX" id="Zo8-7q-8v5"/>
+                <constraint firstItem="KAB-6e-rZO" firstAttribute="top" secondItem="tLL-GK-oFG" secondAttribute="top" id="d3D-8W-icP"/>
+                <constraint firstItem="KAB-6e-rZO" firstAttribute="height" secondItem="tLL-GK-oFG" secondAttribute="height" id="dZ4-h6-fRX"/>
+                <constraint firstItem="KAB-6e-rZO" firstAttribute="width" secondItem="tLL-GK-oFG" secondAttribute="width" id="lne-u3-v2R"/>
+                <constraint firstAttribute="trailing" secondItem="ezt-kY-ewh" secondAttribute="trailing" id="qoo-1H-uIB"/>
+                <constraint firstItem="ezt-kY-ewh" firstAttribute="leading" secondItem="tLL-GK-oFG" secondAttribute="trailing" constant="13" id="zFG-Ze-UHq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magic" width="14" height="18"/>
+        <image name="upload_large_black" width="32" height="26"/>
+    </resources>
+</document>

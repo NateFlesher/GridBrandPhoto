@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GbWhyMagicView" customModule="postcraft" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="175"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magic_large" translatesAutoresizingMaskIntoConstraints="NO" id="g2p-8g-Kqe">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="Td0-mX-Fhk"/>
+                        <constraint firstAttribute="width" constant="35" id="iQU-p3-r2V"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why Magic?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulg-bD-KLC">
+                    <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3G8-a0-pfB">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="qgQ-6B-nF8"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaB-f3-cgx">
+                    <string key="text">the designs work will be especially for you,
+and remove from the store after purchase.</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kc2-AT-9Kt">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.62" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="lBC-Xv-zUs"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNl-0B-pvx" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="82" id="NV5-Jf-zy5"/>
+                        <constraint firstAttribute="height" constant="32" id="yEy-wK-AH7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <color key="tintColor" red="0.96470588235294119" green="0.65098039215686276" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Great!">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="greatBtnTapped:" destination="-1" eventType="touchUpInside" id="z7s-5B-DEc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.56470588235294117" green="0.070588235294117646" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3G8-a0-pfB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="2gv-dr-JKj"/>
+                <constraint firstItem="GNl-0B-pvx" firstAttribute="top" secondItem="oaB-f3-cgx" secondAttribute="bottom" constant="10" id="6cm-X0-eo4"/>
+                <constraint firstAttribute="trailing" secondItem="GNl-0B-pvx" secondAttribute="trailing" constant="16" id="7Qr-tY-ddk"/>
+                <constraint firstItem="g2p-8g-Kqe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="8nr-Td-q6M"/>
+                <constraint firstItem="oaB-f3-cgx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="DmH-Jk-qyb"/>
+                <constraint firstItem="Kc2-AT-9Kt" firstAttribute="top" secondItem="oaB-f3-cgx" secondAttribute="bottom" constant="2" id="HP6-2T-XvH"/>
+                <constraint firstItem="3G8-a0-pfB" firstAttribute="top" secondItem="Ulg-bD-KLC" secondAttribute="bottom" constant="2" id="Lio-Ke-giy"/>
+                <constraint firstItem="g2p-8g-Kqe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="MNG-Hc-jwx"/>
+                <constraint firstAttribute="trailing" secondItem="Kc2-AT-9Kt" secondAttribute="trailing" constant="8" id="QNJ-Ex-TH3"/>
+                <constraint firstItem="Ulg-bD-KLC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="TFw-cM-r7U"/>
+                <constraint firstItem="Kc2-AT-9Kt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Y6v-WP-vGQ"/>
+                <constraint firstItem="oaB-f3-cgx" firstAttribute="top" secondItem="3G8-a0-pfB" secondAttribute="bottom" constant="2" id="kmv-p1-7Iq"/>
+                <constraint firstAttribute="trailing" secondItem="oaB-f3-cgx" secondAttribute="trailing" constant="12" id="l11-pL-KVJ"/>
+                <constraint firstItem="Ulg-bD-KLC" firstAttribute="top" secondItem="g2p-8g-Kqe" secondAttribute="bottom" constant="5" id="x8t-AA-lbu"/>
+                <constraint firstAttribute="trailing" secondItem="3G8-a0-pfB" secondAttribute="trailing" constant="8" id="xci-Ir-N2c"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="magic_large" width="35" height="43"/>
+    </resources>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GbEmptyView" customModule="postcraft" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty" translatesAutoresizingMaskIntoConstraints="NO" id="UI0-lg-AD5">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="9zl-P1-Jg3"/>
+                        <constraint firstAttribute="height" constant="114" id="URQ-o1-eXA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcZ-Jq-TLR">
+                    <string key="text">your save list is empty
+you can add to save list with   and edit later</string>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-ThinItalic" family="Helvetica Neue" pointSize="16"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tcZ-Jq-TLR" firstAttribute="top" secondItem="UI0-lg-AD5" secondAttribute="bottom" constant="39" id="ecf-CC-6Jp"/>
+                <constraint firstAttribute="trailing" secondItem="tcZ-Jq-TLR" secondAttribute="trailing" constant="44.5" id="eqz-kA-G77"/>
+                <constraint firstItem="UI0-lg-AD5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gSW-8Z-MbQ"/>
+                <constraint firstItem="UI0-lg-AD5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="pJZ-uq-L3M"/>
+                <constraint firstItem="tcZ-Jq-TLR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="44.5" id="utE-Bg-Cc6"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="UI0-lg-AD5" id="Ey4-a4-RtX"/>
+                <outlet property="messageLabel" destination="tcZ-Jq-TLR" id="TMr-kR-Mug"/>
+            </connections>
+            <point key="canvasLocation" x="91.5" y="59.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="empty" width="114" height="116"/>
+    </resources>
+</document>

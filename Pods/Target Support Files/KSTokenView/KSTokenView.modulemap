@@ -1,0 +1,6 @@
+framework module KSTokenView {
+  umbrella header "KSTokenView-umbrella.h"
+
+  export *
+  module * { export * }
+}

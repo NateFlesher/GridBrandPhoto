@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GbLoginPromptView" customModule="postcraft" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxY-CG-BQm">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Cnl-0e-tsc">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="31" id="djc-ng-HVv"/>
+                                <constraint firstAttribute="height" constant="56" id="mQ0-wZ-XtQ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFn-Rh-f8v">
+                            <string key="text">Your Guest :(
+we want to know you better before you create your brand</string>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIT-T7-esA">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="MeJ-Tu-Xw1"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54D-Zg-cx1" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <color key="backgroundColor" red="0.56470588239999997" green="0.070588235289999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="csZ-Ao-TUx"/>
+                                <constraint firstAttribute="width" constant="82" id="hvs-4c-BoB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="loginBtnTapped:" destination="-1" eventType="touchUpInside" id="gHV-3y-sPa"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orz-WQ-XUW" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="82" id="gJi-Kt-SWS"/>
+                                <constraint firstAttribute="height" constant="35" id="tdh-OG-hPs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="tintColor" red="0.23137254900000001" green="0.74117647060000003" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Signup">
+                                <color key="titleColor" red="0.1215686275" green="0.47843137250000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="signupBtnTapped:" destination="-1" eventType="touchUpInside" id="VDC-Gh-jaG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qe-FT-XNc">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="OcC-Tq-mDP"/>
+                                <constraint firstAttribute="height" constant="15" id="pLy-hE-SbU"/>
+                            </constraints>
+                            <state key="normal" image="close"/>
+                            <connections>
+                                <action selector="closeBtnTapped:" destination="-1" eventType="touchUpInside" id="sdl-bu-FB1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="VIT-T7-esA" firstAttribute="top" secondItem="MFn-Rh-f8v" secondAttribute="bottom" constant="2" id="0LC-uN-VXl"/>
+                        <constraint firstAttribute="trailing" secondItem="MFn-Rh-f8v" secondAttribute="trailing" constant="24" id="6t5-Pe-80e"/>
+                        <constraint firstItem="Cnl-0e-tsc" firstAttribute="leading" secondItem="dxY-CG-BQm" secondAttribute="leading" constant="24" id="FCj-vu-7MK"/>
+                        <constraint firstItem="VIT-T7-esA" firstAttribute="leading" secondItem="dxY-CG-BQm" secondAttribute="leading" constant="24" id="HZe-sd-Rk2"/>
+                        <constraint firstAttribute="trailing" secondItem="VIT-T7-esA" secondAttribute="trailing" constant="24" id="LFw-ae-bha"/>
+                        <constraint firstAttribute="trailing" secondItem="5qe-FT-XNc" secondAttribute="trailing" constant="16" id="Of8-Fe-ieD"/>
+                        <constraint firstItem="Cnl-0e-tsc" firstAttribute="top" secondItem="dxY-CG-BQm" secondAttribute="top" constant="54" id="V0W-0f-LVu"/>
+                        <constraint firstAttribute="height" constant="263" id="gbQ-GU-GPN"/>
+                        <constraint firstItem="5qe-FT-XNc" firstAttribute="top" secondItem="dxY-CG-BQm" secondAttribute="top" constant="28" id="hBC-iC-6Og"/>
+                        <constraint firstItem="54D-Zg-cx1" firstAttribute="leading" secondItem="dxY-CG-BQm" secondAttribute="leading" constant="24" id="hhS-XV-Aqb"/>
+                        <constraint firstItem="orz-WQ-XUW" firstAttribute="centerY" secondItem="54D-Zg-cx1" secondAttribute="centerY" id="nLW-pu-IAT"/>
+                        <constraint firstItem="54D-Zg-cx1" firstAttribute="top" secondItem="VIT-T7-esA" secondAttribute="bottom" constant="16" id="shA-6F-O0S"/>
+                        <constraint firstItem="MFn-Rh-f8v" firstAttribute="leading" secondItem="dxY-CG-BQm" secondAttribute="leading" constant="24" id="tfV-PV-Gt4"/>
+                        <constraint firstItem="MFn-Rh-f8v" firstAttribute="top" secondItem="Cnl-0e-tsc" secondAttribute="bottom" constant="4" id="vrT-hJ-KTL"/>
+                        <constraint firstAttribute="trailing" secondItem="orz-WQ-XUW" secondAttribute="trailing" constant="24" id="xtp-un-2oh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dxY-CG-BQm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5fH-hO-7F5"/>
+                <constraint firstAttribute="trailing" secondItem="dxY-CG-BQm" secondAttribute="trailing" id="Nko-is-Fur"/>
+                <constraint firstItem="dxY-CG-BQm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zhI-Eg-5OH"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="15" height="15"/>
+        <image name="welcome_logo" width="31" height="56"/>
+    </resources>
+</document>

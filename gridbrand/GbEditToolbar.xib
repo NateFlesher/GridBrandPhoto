@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GbEditToolbar" customModule="postcraft" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraBtn" destination="3EL-0U-NBA" id="FuH-GW-hs6"/>
+                <outlet property="copyBtn" destination="5hz-1K-Dfl" id="3yI-vf-rfE"/>
+                <outlet property="elementLabel" destination="4Dj-8M-3r2" id="TpL-H1-6GZ"/>
+                <outlet property="maskBtn" destination="otX-ye-X4L" id="KA0-pd-obm"/>
+                <outlet property="maskBtnWidthConstraint" destination="JnM-Xe-vch" id="W1k-u4-plJ"/>
+                <outlet property="nextBtn" destination="W0V-dG-KX8" id="cFe-lB-VQE"/>
+                <outlet property="prevBtn" destination="NPx-sH-SfR" id="MxP-hP-3he"/>
+                <outlet property="textBtn" destination="BVb-xx-5VB" id="sHV-WC-vAD"/>
+                <outlet property="textBtnWidthConstraint" destination="oZB-R6-0Qd" id="HBF-F9-3ye"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPx-sH-SfR">
+                    <rect key="frame" x="13" y="6" width="16" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="Qwf-ZR-dMM"/>
+                        <constraint firstAttribute="height" constant="22" id="V6t-MX-aHU"/>
+                    </constraints>
+                    <state key="normal" image="prev"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Element1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dj-8M-3r2">
+                    <rect key="frame" x="37" y="9" width="98" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0V-dG-KX8">
+                    <rect key="frame" x="143" y="6" width="16" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="FPe-hW-qWV"/>
+                        <constraint firstAttribute="width" constant="16" id="JrE-Uj-iJA"/>
+                    </constraints>
+                    <state key="normal" image="next"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hz-1K-Dfl">
+                    <rect key="frame" x="183" y="6" width="24" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="bfQ-Px-LyX"/>
+                        <constraint firstAttribute="height" constant="22" id="smI-W6-Hfc"/>
+                    </constraints>
+                    <state key="normal" image="copy"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otX-ye-X4L">
+                    <rect key="frame" x="231" y="6" width="24" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="JnM-Xe-vch"/>
+                        <constraint firstAttribute="height" constant="22" id="KoF-9S-Oi6"/>
+                    </constraints>
+                    <state key="normal" image="mask"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVb-xx-5VB">
+                    <rect key="frame" x="279" y="6" width="24" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="dnq-d5-pBd"/>
+                        <constraint firstAttribute="width" constant="24" id="oZB-R6-0Qd"/>
+                    </constraints>
+                    <state key="normal" image="A+"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EL-0U-NBA">
+                    <rect key="frame" x="327" y="6" width="24" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="LZr-wt-XSI"/>
+                        <constraint firstAttribute="width" constant="24" id="XFK-XS-rtx"/>
+                    </constraints>
+                    <state key="normal" image="camera"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="NPx-sH-SfR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8Nc-AM-emt"/>
+                <constraint firstItem="BVb-xx-5VB" firstAttribute="leading" secondItem="otX-ye-X4L" secondAttribute="trailing" constant="24" id="MrM-6a-5Kd"/>
+                <constraint firstAttribute="trailing" secondItem="3EL-0U-NBA" secondAttribute="trailing" constant="24" id="OPi-H5-vE7"/>
+                <constraint firstItem="otX-ye-X4L" firstAttribute="leading" secondItem="5hz-1K-Dfl" secondAttribute="trailing" constant="24" id="Qeb-J9-UIm"/>
+                <constraint firstItem="W0V-dG-KX8" firstAttribute="leading" secondItem="4Dj-8M-3r2" secondAttribute="trailing" constant="8" id="U7U-m6-Fia"/>
+                <constraint firstItem="3EL-0U-NBA" firstAttribute="leading" secondItem="BVb-xx-5VB" secondAttribute="trailing" constant="24" id="X2x-VZ-UYq"/>
+                <constraint firstItem="BVb-xx-5VB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aeK-Yu-dC4"/>
+                <constraint firstItem="otX-ye-X4L" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aub-f7-tpo"/>
+                <constraint firstItem="4Dj-8M-3r2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eiV-0D-iv7"/>
+                <constraint firstItem="4Dj-8M-3r2" firstAttribute="leading" secondItem="NPx-sH-SfR" secondAttribute="trailing" constant="8" id="iFV-G4-aDZ"/>
+                <constraint firstItem="5hz-1K-Dfl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jC1-M2-26f"/>
+                <constraint firstItem="3EL-0U-NBA" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="mTI-eY-io9"/>
+                <constraint firstItem="5hz-1K-Dfl" firstAttribute="leading" secondItem="W0V-dG-KX8" secondAttribute="trailing" constant="24" id="mYI-0m-rJE"/>
+                <constraint firstItem="NPx-sH-SfR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="ne8-js-kjL"/>
+                <constraint firstItem="W0V-dG-KX8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zGB-M2-Kt5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="A+" width="19" height="13"/>
+        <image name="camera" width="16" height="15"/>
+        <image name="copy" width="15" height="16"/>
+        <image name="mask" width="18" height="18"/>
+        <image name="next" width="6" height="11"/>
+        <image name="prev" width="6" height="10"/>
+    </resources>
+</document>

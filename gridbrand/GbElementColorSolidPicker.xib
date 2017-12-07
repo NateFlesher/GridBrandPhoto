@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GbElementColorSolidPicker" customModule="postcraft">
+            <connections>
+                <outlet property="brightnessSlider" destination="5Hz-kP-r8J" id="1yh-LY-AZ9"/>
+                <outlet property="hueSlider" destination="ON3-b0-jy8" id="kye-Yv-Yto"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="be1-Ss-jdj">
+                    <rect key="frame" x="40" y="12" width="295" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZy-ws-Jnz" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <rect key="frame" x="34" y="8" width="28" height="28"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="d5I-fI-oIR"/>
+                                <constraint firstAttribute="width" constant="28" id="gvU-1B-UCj"/>
+                            </constraints>
+                            <color key="tintColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" image="knife"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XsN-GX-eOI" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <rect key="frame" x="74" y="8" width="28" height="28"/>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.72941176470588232" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="cun-qh-wfE"/>
+                                <constraint firstAttribute="height" constant="28" id="xRT-Wb-QgN"/>
+                            </constraints>
+                            <color key="tintColor" red="0.96078431369999995" green="0.72941176470000002" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="paL-Ct-zWh" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <rect key="frame" x="114" y="8" width="28" height="28"/>
+                            <color key="backgroundColor" red="0.81568627450980391" green="0.0039215686274509803" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="v8v-c3-1co"/>
+                                <constraint firstAttribute="height" constant="28" id="xLX-tv-OE5"/>
+                            </constraints>
+                            <color key="tintColor" red="0.81568627449999997" green="0.0039215686269999999" blue="0.1058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtR-hd-Eo4" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <rect key="frame" x="154" y="8" width="28" height="28"/>
+                            <color key="backgroundColor" red="0.31372549019607843" green="0.8901960784313725" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="8m3-hr-6Vv"/>
+                                <constraint firstAttribute="width" constant="28" id="HJh-4z-zO4"/>
+                            </constraints>
+                            <color key="tintColor" red="0.31372549020000001" green="0.89019607840000003" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJx-Uh-aV1" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <rect key="frame" x="194" y="8" width="28" height="28"/>
+                            <color key="backgroundColor" red="0.28627450980392155" green="0.56470588235294117" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="GG0-H1-G8r"/>
+                                <constraint firstAttribute="height" constant="28" id="jq7-d9-t1v"/>
+                            </constraints>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1r-sM-ebS" customClass="GbRoundedButton" customModule="postcraft" customModuleProvider="target">
+                            <rect key="frame" x="234" y="8" width="28" height="28"/>
+                            <color key="backgroundColor" red="0.56470588235294117" green="0.070588235294117646" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="ncL-tK-UeM"/>
+                                <constraint firstAttribute="height" constant="28" id="u5X-2m-zdG"/>
+                            </constraints>
+                            <color key="tintColor" red="0.56470588239999997" green="0.070588235289999995" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="paL-Ct-zWh" firstAttribute="centerY" secondItem="be1-Ss-jdj" secondAttribute="centerY" id="2lI-ge-ey2"/>
+                        <constraint firstItem="eJx-Uh-aV1" firstAttribute="centerY" secondItem="be1-Ss-jdj" secondAttribute="centerY" id="357-Bn-vCx"/>
+                        <constraint firstItem="OtR-hd-Eo4" firstAttribute="centerX" secondItem="be1-Ss-jdj" secondAttribute="centerX" constant="20" id="82s-CC-UOr"/>
+                        <constraint firstItem="paL-Ct-zWh" firstAttribute="leading" secondItem="XsN-GX-eOI" secondAttribute="trailing" constant="12" id="CDd-2G-dfz"/>
+                        <constraint firstItem="eJx-Uh-aV1" firstAttribute="leading" secondItem="OtR-hd-Eo4" secondAttribute="trailing" constant="12" id="Jrn-FQ-83O"/>
+                        <constraint firstItem="XsN-GX-eOI" firstAttribute="centerY" secondItem="be1-Ss-jdj" secondAttribute="centerY" id="M1Z-j9-qun"/>
+                        <constraint firstItem="paL-Ct-zWh" firstAttribute="centerX" secondItem="be1-Ss-jdj" secondAttribute="centerX" constant="-20" id="TSp-Zq-y6C"/>
+                        <constraint firstItem="kZy-ws-Jnz" firstAttribute="centerY" secondItem="be1-Ss-jdj" secondAttribute="centerY" id="ZUD-Pv-Kgj"/>
+                        <constraint firstItem="OtR-hd-Eo4" firstAttribute="centerY" secondItem="be1-Ss-jdj" secondAttribute="centerY" id="dLS-h7-WsW"/>
+                        <constraint firstItem="XsN-GX-eOI" firstAttribute="leading" secondItem="kZy-ws-Jnz" secondAttribute="trailing" constant="12" id="eAf-md-Fpg"/>
+                        <constraint firstAttribute="height" constant="44" id="fD9-dt-8g0"/>
+                        <constraint firstItem="G1r-sM-ebS" firstAttribute="leading" secondItem="eJx-Uh-aV1" secondAttribute="trailing" constant="12" id="kjs-FH-1cQ"/>
+                        <constraint firstItem="G1r-sM-ebS" firstAttribute="centerY" secondItem="be1-Ss-jdj" secondAttribute="centerY" id="xEo-ql-Sj3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQ1-XL-3Zn">
+                    <rect key="frame" x="24" y="70" width="327" height="12"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ON3-b0-jy8" customClass="GbHueSlider" customModule="postcraft" customModuleProvider="target">
+                            <rect key="frame" x="1" y="1" width="325" height="10"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" red="0.02541857893126492" green="0.87707686424255371" blue="0.79272841818000483" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="7pS-Wq-A6T"/>
+                        <constraint firstAttribute="bottom" secondItem="ON3-b0-jy8" secondAttribute="bottom" constant="1" id="GEK-hk-JR7"/>
+                        <constraint firstItem="ON3-b0-jy8" firstAttribute="top" secondItem="UQ1-XL-3Zn" secondAttribute="top" constant="1" id="uly-4d-EaJ"/>
+                        <constraint firstAttribute="trailing" secondItem="ON3-b0-jy8" secondAttribute="trailing" constant="1" id="y3O-Qg-cQ6"/>
+                        <constraint firstItem="ON3-b0-jy8" firstAttribute="leading" secondItem="UQ1-XL-3Zn" secondAttribute="leading" constant="1" id="yx2-EH-vjb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPZ-Sz-Y68">
+                    <rect key="frame" x="24" y="105" width="327" height="12"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Hz-kP-r8J" customClass="GbBrightnessSlider" customModule="postcraft" customModuleProvider="target">
+                            <rect key="frame" x="1" y="1" width="325" height="10"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="hue">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="saturation">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="brightness">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="5Hz-kP-r8J" firstAttribute="leading" secondItem="QPZ-Sz-Y68" secondAttribute="leading" constant="1" id="4jI-g1-Ral"/>
+                        <constraint firstAttribute="bottom" secondItem="5Hz-kP-r8J" secondAttribute="bottom" constant="1" id="Gg7-W2-QQC"/>
+                        <constraint firstAttribute="trailing" secondItem="5Hz-kP-r8J" secondAttribute="trailing" constant="1" id="Prw-zm-zfI"/>
+                        <constraint firstAttribute="height" constant="12" id="TLc-bU-jTt"/>
+                        <constraint firstItem="5Hz-kP-r8J" firstAttribute="top" secondItem="QPZ-Sz-Y68" secondAttribute="top" constant="1" id="eiD-c9-pBb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="be1-Ss-jdj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="8yD-M0-M6T"/>
+                <constraint firstAttribute="trailing" secondItem="be1-Ss-jdj" secondAttribute="trailing" constant="40" id="DDG-bB-TNa"/>
+                <constraint firstItem="UQ1-XL-3Zn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="EZM-ad-gA9"/>
+                <constraint firstItem="UQ1-XL-3Zn" firstAttribute="top" secondItem="be1-Ss-jdj" secondAttribute="bottom" constant="14" id="Gim-hj-uwy"/>
+                <constraint firstItem="QPZ-Sz-Y68" firstAttribute="top" secondItem="UQ1-XL-3Zn" secondAttribute="bottom" constant="23" id="KOR-A9-Lhw"/>
+                <constraint firstAttribute="trailing" secondItem="QPZ-Sz-Y68" secondAttribute="trailing" constant="24" id="SN4-US-PIo"/>
+                <constraint firstAttribute="trailing" secondItem="UQ1-XL-3Zn" secondAttribute="trailing" constant="24" id="U6E-XR-LbW"/>
+                <constraint firstItem="QPZ-Sz-Y68" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="Uvv-Lh-Ocg"/>
+                <constraint firstItem="be1-Ss-jdj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="cRi-iq-cgS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="37.5" y="59.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="knife" width="13" height="13"/>
+    </resources>
+</document>

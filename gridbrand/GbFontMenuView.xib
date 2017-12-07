@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11762"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GbFontMenuView" customModule="postcraft" customModuleProvider="target">
+            <connections>
+                <outlet property="alignmentBtn" destination="men-3X-hq8" id="i3d-li-0ci"/>
+                <outlet property="fontBtn" destination="J1L-iu-LDf" id="0d9-m1-zqI"/>
+                <outlet property="sizeBtn" destination="17T-Vb-Wud" id="PMr-cf-MpQ"/>
+                <outlet property="styleBtn" destination="zAI-qg-AFw" id="KNg-fG-58O"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="W2a-Tw-i34">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAI-qg-AFw" customClass="GbIconButton" customModule="postcraft" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="187.5" height="83.5"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="brush_black"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Style"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1L-iu-LDf" customClass="GbIconButton" customModule="postcraft" customModuleProvider="target">
+                    <rect key="frame" x="187.5" y="0.0" width="187.5" height="83.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="letter_black"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Font"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17T-Vb-Wud" customClass="GbIconButton" customModule="postcraft" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="83.5" width="187.5" height="83.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="T_black"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Size"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="men-3X-hq8" customClass="GbIconButton" customModule="postcraft" customModuleProvider="target">
+                    <rect key="frame" x="187.5" y="83.5" width="187.5" height="83.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="align_center_black"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Alignment"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="zAI-qg-AFw" firstAttribute="height" secondItem="W2a-Tw-i34" secondAttribute="height" multiplier="0.5" id="8Ly-iG-YYJ"/>
+                <constraint firstItem="17T-Vb-Wud" firstAttribute="width" secondItem="W2a-Tw-i34" secondAttribute="width" multiplier="0.5" id="HG5-yE-8l2"/>
+                <constraint firstItem="J1L-iu-LDf" firstAttribute="width" secondItem="W2a-Tw-i34" secondAttribute="width" multiplier="0.5" id="Y0B-co-mCb"/>
+                <constraint firstItem="men-3X-hq8" firstAttribute="width" secondItem="W2a-Tw-i34" secondAttribute="width" multiplier="0.5" id="YGf-wG-XPo"/>
+                <constraint firstItem="zAI-qg-AFw" firstAttribute="leading" secondItem="W2a-Tw-i34" secondAttribute="leading" id="YOG-dO-OFz"/>
+                <constraint firstItem="men-3X-hq8" firstAttribute="leading" secondItem="17T-Vb-Wud" secondAttribute="trailing" id="aag-P9-dQa"/>
+                <constraint firstItem="zAI-qg-AFw" firstAttribute="top" secondItem="W2a-Tw-i34" secondAttribute="top" id="dHN-bK-Xek"/>
+                <constraint firstItem="J1L-iu-LDf" firstAttribute="top" secondItem="zAI-qg-AFw" secondAttribute="top" id="f89-1w-SdZ"/>
+                <constraint firstItem="17T-Vb-Wud" firstAttribute="leading" secondItem="W2a-Tw-i34" secondAttribute="leading" id="hqU-h8-c8s"/>
+                <constraint firstItem="17T-Vb-Wud" firstAttribute="top" secondItem="zAI-qg-AFw" secondAttribute="bottom" id="iKO-Op-XQK"/>
+                <constraint firstItem="J1L-iu-LDf" firstAttribute="leading" secondItem="zAI-qg-AFw" secondAttribute="trailing" id="lAn-4H-HOn"/>
+                <constraint firstItem="17T-Vb-Wud" firstAttribute="height" secondItem="W2a-Tw-i34" secondAttribute="height" multiplier="0.5" id="oCr-9G-e4t"/>
+                <constraint firstItem="men-3X-hq8" firstAttribute="top" secondItem="17T-Vb-Wud" secondAttribute="top" id="s17-bJ-ryl"/>
+                <constraint firstItem="men-3X-hq8" firstAttribute="height" secondItem="W2a-Tw-i34" secondAttribute="height" multiplier="0.5" id="vIs-zj-i2G"/>
+                <constraint firstItem="J1L-iu-LDf" firstAttribute="height" secondItem="W2a-Tw-i34" secondAttribute="height" multiplier="0.5" id="ww1-a9-5vY"/>
+                <constraint firstItem="zAI-qg-AFw" firstAttribute="width" secondItem="W2a-Tw-i34" secondAttribute="width" multiplier="0.5" id="x7J-i1-ieW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="T_black" width="13" height="15"/>
+        <image name="align_center_black" width="15" height="15"/>
+        <image name="brush_black" width="15" height="21"/>
+        <image name="letter_black" width="23" height="19"/>
+    </resources>
+</document>
