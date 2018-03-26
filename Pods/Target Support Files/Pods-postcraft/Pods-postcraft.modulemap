@@ -1,6 +1,0 @@
-framework module Pods_postcraft {
-  umbrella header "Pods-postcraft-umbrella.h"
-
-  export *
-  module * { export * }
-}
